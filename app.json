@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "monetize",
-    "slug": "monetize",
+    "name": "apple-pay",
+    "slug": "apple-pay",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,7 +18,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.apps.hal.monetize"
+      "bundleIdentifier": "com.keitanamazue.applepay"
     },
     "android": {
       "adaptiveIcon": {
@@ -32,7 +32,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "d6bda6c5-9ebf-48f9-9275-72d2bb6343f7"
+        "projectId": "7b078d86-369a-4d9e-999e-44c8e2766f33"
       }
     }
   },

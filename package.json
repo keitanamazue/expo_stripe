@@ -5,12 +5,14 @@
     "build:local:android": "eas build -p android --profile development --local",
     "build": "eas build --platform all --profile production  --auto-submit-with-profile=production",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
-    "expo": "^48.0.19",
+    "expo": "~48.0.18",
     "expo-dev-client": "~2.2.1",
     "expo-splash-screen": "~0.18.2",
     "expo-status-bar": "~1.4.4",

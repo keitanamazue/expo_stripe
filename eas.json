@@ -4,13 +4,13 @@
   },
   "build": {
     "development": {
+      "developmentClient": true,
       "distribution": "internal",
       "android": {
         "gradleCommand": ":app:assembleDebug"
       },
       "ios": {
-        "buildConfiguration": "Debug",
-        "simulator": true
+        "resourceClass": "m1-medium"
       }
     },
     "preview": {

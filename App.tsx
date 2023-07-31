@@ -160,7 +160,7 @@ export default function App() {
     Purchases.setDebugLogsEnabled(true);
     Purchases.configure({
       apiKey: Platform.select({
-        ios: "public_ios_sdk_key",
+        ios: "appl_qtlibJABxecTLhivVynyqYJzzmk",
         android: "public_google_sdk_key",
       })!,
     });

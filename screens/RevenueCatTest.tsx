@@ -34,11 +34,16 @@ export default function RevenueCatTest(props: Props) {
     try {
       // 現在提供しているプランをRevenueCatから取得する
       Purchases.getOfferings().then((offerings) => {
+
+// console.log(JSON.stringify(offerings.all, null, 2));
+// console.log(JSON.stringify(offerings.current?.monthly, null, 2));
+// console.log(JSON.stringify(offerings.current?.availablePackages, null, 2));
+        
+        
         if (
           offerings.current !== null &&
           offerings.current.availablePackages.length !== 0
         ) {
-          console.log(offerings.current.monthly);
           // 価格変更をアプリの変更なしで対応可能なように、offeringから価格文字列を取得する
           if (offerings.current.monthly) {
             setPrice(offerings.current.monthly?.product.priceString);
@@ -57,12 +62,13 @@ export default function RevenueCatTest(props: Props) {
 
   /** 購入処理 */
   const purchase = async () => {
-    console.log("purchase");
     // Using Offerings/Packages
     try {
       // Packageが取得できているかチェックする
       if (rcPackage) {
         const { customerInfo } = await Purchases.purchasePackage(rcPackage);
+console.log(JSON.stringify(customerInfo, null, 2));
+        
         if (Object.entries(customerInfo.entitlements.active).length > 0) {
           // プレミアム購入ずみの設定をアプリ全体に反映させる
           setPremium(true);
