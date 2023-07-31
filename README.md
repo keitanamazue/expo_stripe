@@ -34,3 +34,4 @@ yarn run android
 
 うまくいかない・動かないなどありましたら、Issue を作成していただければと思います。<br/>
 または、[Twitter](https://twitter.com/HAL1986____)等でご連絡ください。
+# chekout_with_apple_google
